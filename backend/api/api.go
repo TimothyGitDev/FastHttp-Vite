@@ -15,6 +15,6 @@ func Run() {
 	})
 
 	if err := fasthttp.ListenAndServe(":1234", r.Handler); err != nil {
-        panic(err) // Обработка ошибки при запуске сервера
+        panic(err) 
     }
 }
